@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 10px Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-basis: 100vw;
+    background: linear-gradient(#a6c6d3, #1f8da8);
+}
+
+.game-field {
+    height: 502px;
+    width: 322px;
+    border: 1px solid #221c2e;
+    background: linear-gradient(#b0b335, #b5bb92);
+}
+
+.header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(#41caca, #3e799b);
+
+}
+
+.header__player {
+    padding: 30px;
+}
+
+.header__text,
+.header__result {
+    font-size: 2rem;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.game__el {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+    flex-basis: 100px;
+    padding: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.game__el:hover {
+    background-color: #dddddd;
+}
+
+game__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modiefiers */
+
+.fas.fa-times {
+    display: none;
+}
+
+.far.fa-circle {
+    display: none;
+}
+
+.game__icon--cross .fas.fa-times:first-child {
+    display: block;
+    font-size: 6rem;
+}
+
+
+.game__icon--circle .far.fa-circle:nth-child(2) {
+    display: block;
+    font-size: 6rem;
+}
